@@ -1,0 +1,26 @@
+{
+    "configuration": {
+        "status": "error",
+        "name": "JSONConfigDemo",
+        "packages": "com.howtodoinjava",
+        "ThresholdFilter": {
+            "level": "debug"
+        },
+        "appenders": {
+            "Console": {
+                "name": "STDOUT",
+                "PatternLayout": {
+                    "pattern": "%d %-5p [%t] %C{2}.%M(%F:%L) - %m%n"
+                }
+            }
+        },
+        "loggers": {
+            "root": {
+                "level": "debug",
+                "AppenderRef": {
+                    "ref": "STDOUT"
+                }
+            }
+        }
+    }
+}
